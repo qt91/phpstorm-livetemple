@@ -1,0 +1,30 @@
+<templateSet group="JavaScript">
+  <template name="log" value="console.log($message$);" description="Console log" toReformat="true" toShortenFQNames="true">
+    <variable name="message" expression="capitalize(String)" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="debug" value="if(navigator.appName == 'Netscape')&#10;    debugger;" description="Debug" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="trace" value="console.trace();" shortcut="SPACE" description="console.trace()" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="event" value="google.maps.event.addListener($Map$, '$Event$', function(event) {&#10;    console.trace();&#10;});" description="Event Listener Google Map" toReformat="true" toShortenFQNames="true">
+    <variable name="Event" expression="" defaultValue="click" alwaysStopAt="true" />
+    <variable name="Map" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="Profile" value=" console.profile(&quot;Profile_a&quot;); // put the Start of code block&#10; &#10; console.profileEnd(&quot;Profile_a&quot;); // put the End of code block" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+</templateSet>

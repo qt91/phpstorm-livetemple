@@ -1,0 +1,35 @@
+<templateSet group="PHP">
+  <template name="dump" value="var_dump($VAR0$);exit();" description="var_dump" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="log" value="error_log('$VAR0$');" description="error log" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="region" value="#region $comment$&#10;    $code$&#10;#endregion" description="Region comment block" toReformat="false" toShortenFQNames="true">
+    <variable name="comment" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="code" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="amcontroller" value="defined('BASEPATH') OR exit('No direct script access allowed');&#10;&#10;class $VAR0$ extends AM_Controller {&#10;&#10;    public function __construct(){&#10;        parent::__construct();&#10;        &#10;    }&#10;&#10;}" description="Class am constroller" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR0" expression="phpSuggestVariableName()" defaultValue="&quot;Controller Name&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="ammodel" value="class $VAR0$ extends AM_Model {&#10;    var $table_name          = '$VAR1$';&#10;    var $primary_column_name = '$VAR2$';&#10;&#10;    public function __construct(){&#10;        parent::__construct();&#10;        $this-&gt;init($this-&gt;table_name, $this-&gt;primary_column_name);&#10;    }&#10;&#10;}" description="Am Model" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR0" expression="phpSuggestVariableName()" defaultValue="&quot;Model Name&quot;" alwaysStopAt="true" />
+    <variable name="VAR1" expression="phpSuggestVariableName()" defaultValue="&quot;Table Name&quot;" alwaysStopAt="true" />
+    <variable name="VAR2" expression="phpSuggestVariableName()" defaultValue="&quot;Primary Name&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+</templateSet>

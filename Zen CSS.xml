@@ -1,0 +1,20 @@
+<templateSet group="Zen CSS">
+  <template name="trf:t" value="transform: translate($VAR0$, $VAR1$);" description="transform: translate(x, y);" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;x&quot;" alwaysStopAt="true" />
+    <variable name="VAR1" expression="" defaultValue="&quot;y&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="trf:tx" value="transform: translateX($VAR0$);" description="transform: translateX(x);" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;x&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="trf:ty" value="transform: translateY($VAR0$);" description="transform: translateY(y);" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;y&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="debug" value="body div{&#10;    outline: 1px dashed #000000 !important;&#10;}&#10;body ul{&#10;    outline: 1px dashed #FF0000 !important;&#10;}&#10;body span{&#10;    outline: 1px dashed #E7B315 !important;&#10;}&#10;body a{&#10;    outline: 1px dashed #0000FF !important;&#10;}" description="debug" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="CSS" value="true" />
+    </context>
+  </template>
+</templateSet>
