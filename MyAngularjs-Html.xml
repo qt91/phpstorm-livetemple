@@ -1,0 +1,7 @@
+<templateSet group="MyAngularjs-Html">
+  <template name="datatables" value="&lt;table  width=&quot;100%&quot; class=&quot;table table-striped table-bordered&quot; datatable=&quot;&quot; dt-options=&quot;vm.dtOptions&quot; dt-columns=&quot;vm.dtColumns&quot; dt-instance=&quot;vm.dtInstance&quot; &gt;&lt;/table&gt;" description="Angularjs: datatable show html" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+</templateSet>
